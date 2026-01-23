@@ -1,0 +1,22 @@
+<section class="newsletter {{cssClass}}" id="newsletter">
+  <div class="newsletter__content">
+    <div class="newsletter__text">
+      <h2 class="newsletter__title">{{title}}</h2>
+      <p class="newsletter__description">{{description}}</p>
+    </div>
+
+    <form class="newsletter__form" id="newsletter-form">
+      <div class="newsletter__input-group">
+        <input
+          type="email"
+          class="newsletter__input"
+          placeholder="{{placeholder}}"
+          name="email"
+          required
+        />
+        <button type="submit" class="newsletter__button">{{buttonText}}</button>
+      </div>
+      <p class="newsletter__message" id="newsletter-message"></p>
+    </form>
+  </div>
+</section>

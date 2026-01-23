@@ -1,0 +1,135 @@
+.newsletter {
+  --_newsletter-bg: var(--newsletter-bg, var(--color-primary));
+  --_newsletter-text: var(--newsletter-text, var(--color-light));
+  --_newsletter-accent: var(--newsletter-accent, var(--color-light));
+}
+
+.newsletter {
+  background-color: var(--_newsletter-bg);
+  color: var(--_newsletter-text);
+  padding: 4rem 1.5rem;
+}
+
+.newsletter__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.newsletter__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+.newsletter__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.newsletter__description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.newsletter__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.newsletter__input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.newsletter__input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--_newsletter-accent);
+  color: var(--_newsletter-bg);
+  transition: all 0.3s;
+}
+
+.newsletter__input::placeholder {
+  /* pour viser le placeholder */
+  color: var(--_newsletter-bg);
+  opacity: 0.6;
+}
+
+.newsletter__button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: 2px solid var(--_newsletter-accent);
+  background-color: transparent;
+  color: var(--_newsletter-accent);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.newsletter__button:hover {
+  background-color: var(--_newsletter-accent);
+  color: var(--_newsletter-bg);
+  transform: translateY(-0.2rem);
+}
+
+.newsletter__message {
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+@media (width > 40rem) {
+  .newsletter {
+    padding: 5rem 3rem;
+  }
+
+  .newsletter__content {
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .newsletter__text {
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  .newsletter__form {
+    flex-grow: 1;
+  }
+
+  .newsletter__input-group {
+    flex-direction: row;
+  }
+
+  .newsletter__input {
+    flex-grow: 1;
+  }
+
+  .newsletter__button {
+    width: auto;
+    padding: 1rem 2rem;
+  }
+
+  .newsletter__title {
+    font-size: 2.25rem;
+  }
+}

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PixelForge : Donnez vie à vos projets</title>
+    <link rel="stylesheet" href="./css/global.css" />
+  </head>
+
+  <body>
+    <div id="content">
+      <script type="module">
+        // Import Navigation
+        import { Navigation } from "./component/Monsite/Navigation/index.js";
+        import { NavigationData } from "./data/monsite/NavigationData.js";
+
+        // Import Hero
+        import { Hero } from "./component/Monsite/Hero/index.js";
+        import { HeroData } from "./data/monsite/HeroData.js";
+
+        // Import Services
+        import { Services } from "./component/Monsite/Services/index.js";
+        import { ServicesData } from "./data/monsite/ServicesData.js";
+
+        // Import Portfolio
+        import { Portfolio } from "./component/Monsite/Portfolio/index.js";
+        import { PortfolioData } from "./data/monsite/PortfolioData.js";
+
+        // Import About
+        import { About } from "./component/Monsite/About/index.js";
+        import { AboutData } from "./data/monsite/AboutData.js";
+
+        // Import CTA
+        import { CTA } from "./component/Monsite/CTA/index.js";
+        import { CTAData } from "./data/monsite/CTAData.js";
+
+        // Import Footer
+        import { Footer } from "./component/Monsite/Footer/index.js";
+        import { FooterData } from "./data/monsite/FooterData.js";
+
+        // Import Newsletter
+        import { Newsletter } from "./component/Monsite/Newsletter/index.js";
+        import { NewsletterData } from "./data/monsite/NewsletterData.js";
+
+        // Import Team
+        import { Team } from "./component/Monsite/Team/index.js";
+        import { TeamData } from "./data/monsite/TeamData.js";
+
+        // Import Testimonials
+        import { Testimonials } from "./component/Monsite/Testimonials/index.js";
+        import { TestimonialsData } from "./data/monsite/TestimonialsData.js";
+
+        // Import Clients
+        import { Clients } from "./component/Monsite/Clients/index.js";
+        import { ClientsData } from "./data/monsite/ClientsData.js";
+
+        // Import Pricing Table
+        import { PricingTable } from "./component/Monsite/PricingTable/index.js";
+        import { PricingTableData } from "./data/monsite/PricingTableData.js";
+
+        // Import Process
+        import { Process } from "./component/Monsite/Process/index.js";
+        import { ProcessData } from "./data/monsite/ProcessData.js";
+
+        // Import Achievements
+        import { Achievements } from "./component/Monsite/Achievements/index.js";
+        import { AchievementsData } from "./data/monsite/AchievementsData.js";
+
+        // Import FAQ
+        import { FAQ } from "./component/Monsite/FAQ/index.js";
+        import { FAQData } from "./data/monsite/FAQData.js";
+
+        // Rendus components
+
+        let indice = Math.floor(Math.random() * NavigationData.length);
+
+        Navigation.render("#content", NavigationData[indice]);
+        Hero.render("#content", HeroData[indice]);
+        Team.render("#content", TeamData[indice]);
+        Services.render("#content", ServicesData[indice]);
+        Clients.render("#content", ClientsData[indice]);
+        Portfolio.render("#content", PortfolioData[indice]);
+        Process.render("#content", ProcessData[indice]);
+        About.render("#content", AboutData[indice]);
+        Testimonials.render("#content", TestimonialsData[indice]);
+        Achievements.render("#content", AchievementsData[indice]);
+        PricingTable.render("#content", PricingTableData[indice]);
+        Newsletter.render("#content", NewsletterData[indice]);
+        FAQ.render("#content", FAQData[indice]);
+        CTA.render("#content", CTAData[indice]);
+        Footer.render("#content", FooterData[indice]);
+      </script>
+    </div>
+  </body>
+</html>

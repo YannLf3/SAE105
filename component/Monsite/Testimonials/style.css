@@ -1,0 +1,105 @@
+.testimonials {
+  --_testimonials-bg: var(--testimonials-bg, var(--color-gray-light));
+  --_testimonials-text: var(--testimonials-text, var(--color-dark));
+}
+
+.testimonials {
+  background-color: var(--_testimonials-bg);
+  color: var(--_testimonials-text);
+  padding: 5rem 1.5rem;
+}
+
+.testimonials__subtitle {
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.testimonials__title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+
+.testimonials__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.testimonials__card {
+  background-color: var(--color-light);
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+  border: 2px solid transparent;
+}
+
+.testimonials__card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.1);
+  border-color: var(--color-primary);
+}
+
+.testimonials__card-rating {
+  font-size: 1.5rem;
+  color: var(--color-accent);
+  margin-bottom: 1.5rem;
+  line-height: 1;
+}
+
+.testimonials__card-text {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-gray);
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.testimonials__card-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.testimonials__card-avatar {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.testimonials__card-name {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.testimonials__card-company {
+  font-size: 0.9rem;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+@media (width > 40rem) {
+  .testimonials {
+    padding: 6rem 3rem;
+  }
+
+  .testimonials__grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimonials__card {
+    width: 30%;
+  }
+}

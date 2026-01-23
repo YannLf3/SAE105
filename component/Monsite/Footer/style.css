@@ -1,0 +1,136 @@
+.footer {
+  --_footer-bg: var(--footer-bg, var(--color-darker));
+  --_footer-text: var(--footer-text, var(--color-light));
+  --_footer-accent: var(--footer-accent, var(--color-primary));
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--_footer-bg);
+  color: var(--_footer-text);
+  padding: 4rem 1.5rem 2rem;
+}
+
+.footer__container {
+  width: 100%;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.footer__section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.footer__logo {
+  font-size: 1.5rem;
+  color: var(--_footer-accent);
+}
+
+.footer__description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--_footer-text);
+  margin: 0;
+  opacity: 0.8;
+}
+
+.footer__title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--_footer-text);
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+.footer__links,
+.footer__socials {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer__links li, /* nom de la class + sélécteur => on vise le sélecteur de la classe */
+.footer__socials li {
+  margin: 0;
+}
+
+.footer__links a,
+.footer__socials a {
+  font-size: 0.95rem;
+  color: var(--_footer-text);
+  text-decoration: none;
+  transition:
+    color 0.3s,
+    transform 0.3s;
+  display: inline-block;
+  opacity: 0.8;
+}
+
+.footer__links a:hover,
+.footer__socials a:hover {
+  color: var(--_footer-accent);
+  transform: translateX(0.2rem);
+}
+
+.footer__contact {
+  font-size: 0.95rem;
+  color: var(--_footer-text);
+  margin: 0;
+  opacity: 0.8;
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.footer__copyright {
+  font-size: 0.85rem;
+  color: var(--_footer-text);
+  margin: 0;
+  opacity: 0.7;
+}
+
+@media (width > 40rem) {
+  .footer {
+    padding: 5rem 3rem 2.5rem;
+  }
+
+  .footer__content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .footer__section {
+    /* 50% = largeur pour créer 2 colonnes égales */
+    width: 50%;
+  }
+
+  .footer__links,
+  .footer__socials {
+    flex-direction: column;
+  }
+}

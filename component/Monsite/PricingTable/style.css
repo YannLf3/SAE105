@@ -1,0 +1,139 @@
+.pricing-table {
+  --_pricing-bg: var(--pricing-bg, var(--color-gray-light));
+  --_pricing-text: var(--pricing-text, var(--color-dark));
+}
+
+.pricing-table {
+  background-color: var(--_pricing-bg);
+  color: var(--_pricing-text);
+  padding: 5rem 1.5rem;
+}
+
+.pricing-table__subtitle {
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.pricing-table__title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+
+.pricing-table__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.pricing-table__card {
+  background-color: var(--color-light);
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  border: 2px solid transparent;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s,
+    border-color 0.3s;
+}
+
+.pricing-table__card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.1);
+  border-color: var(--color-primary);
+}
+
+.pricing-table__card {
+  position: relative;
+}
+
+.pricing-table__plan-name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.pricing-table__plan-description {
+  font-size: 0.9rem;
+  color: var(--color-gray);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pricing-table__plan-price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.pricing-table__plan-amount {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.pricing-table__plan-period {
+  font-size: 1rem;
+  color: var(--color-gray);
+}
+
+.pricing-table__plan-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2.5rem;
+}
+
+.pricing-table__plan-feature {
+  padding: 0.875rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.pricing-table__plan-button {
+  width: 100%;
+  padding: 1.125rem;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.pricing-table__plan-button:hover {
+  transform: translateY(-0.1875rem);
+  box-shadow: 0 0.625rem 1.25rem rgba(59, 130, 246, 0.3);
+}
+
+@media (width > 40rem) {
+  .pricing-table {
+    padding: 6rem 3rem;
+  }
+
+  .pricing-table__grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .pricing-table__card {
+    width: 30%;
+  }
+}

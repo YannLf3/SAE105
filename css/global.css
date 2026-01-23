@@ -1,0 +1,48 @@
+@layer variables, reset, base, component;
+
+@import "./reset.css" layer(reset);
+@import "./variables.css" layer(variables);
+@import "./base.css" layer(base);
+
+/*Iteration 1*/
+@import "../component/iteration1/Navigation1/style.css" layer(component);
+@import "../component/iteration1/Footer1/style.css" layer(component);
+@import "../component/iteration1/Showcase1/style.css" layer(component);
+@import "../component/iteration1/Contact-formulaire/style.css" layer(component);
+
+/*Iteration 2*/
+@import "../component/iteration2/Navigation2/style.css" layer(component);
+@import "../component/iteration2/Clients/style.css" layer(component);
+@import "../component/iteration2/Features/style.css" layer(component);
+@import "../component/iteration2/Plan/style.css" layer(component);
+@import "../component/iteration2/Blog/style.css" layer(component);
+@import "../component/iteration2/Testimonials/style.css" layer(component);
+@import "../component/iteration2/Contact/style.css" layer(component);
+@import "../component/iteration2/FaQ/style.css" layer(component);
+@import "../component/iteration2/Footer2/style.css" layer(component);
+@import "../component/iteration2/Hero2/style.css" layer(component);
+
+/*Iteration 3*/
+@import "../component/Footer3/style.css" layer(component);
+@import "../component/Hero/style.css" layer(component);
+@import "../component/Navigation3/style.css" layer(component);
+@import "../component/Product/style.css" layer(component);
+@import "../component/Showcase3/style.css" layer(component);
+@import "../component/Test/style.css" layer(component);
+
+/*Mon site*/
+@import "../component/Monsite/Navigation/style.css" layer(component);
+@import "../component/Monsite/Hero/style.css" layer(component);
+@import "../component/Monsite/Services/style.css" layer(component);
+@import "../component/Monsite/Portfolio/style.css" layer(component);
+@import "../component/Monsite/About/style.css" layer(component);
+@import "../component/Monsite/CTA/style.css" layer(component);
+@import "../component/Monsite/Footer/style.css" layer(component);
+@import "../component/Monsite/Newsletter/style.css" layer(component);
+@import "../component/Monsite/Team/style.css" layer(component);
+@import "../component/Monsite/Testimonials/style.css" layer(component);
+@import "../component/Monsite/Clients/style.css" layer(component);
+@import "../component/Monsite/PricingTable/style.css" layer(component);
+@import "../component/Monsite/Process/style.css" layer(component);
+@import "../component/Monsite/Achievements/style.css" layer(component);
+@import "../component/Monsite/FAQ/style.css" layer(component);

@@ -1,0 +1,116 @@
+/* Variables privées pour le Hero */
+.hero3 {
+  --hero-bg-mobile: url("/assets/Iteration3/audiophile/image-hero_mobile.jpg");
+  --hero-bg-desktop: url("/assets/Iteration3/audiophile/image-hero_desktop.jpeg");
+  --hero-subtitle-color: var(--color-gray1);
+  --hero-title-color: var(--color-light1);
+  --hero-description-color: var(--color-gray-light1);
+  --hero-button-bg: var(--color-orange);
+  --hero-button-hover-bg: #fbaf85;
+}
+
+/* Bloc Hero */
+.hero3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 32rem;
+  background-image: var(--hero-bg-mobile);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  border-top: 1px solid var(--color-gray-light1);
+  padding: 2rem 1.5rem;
+}
+
+/* Elements du Hero */
+.hero__subtitle-top3 {
+  letter-spacing: 0.6rem;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  color: var(--hero-subtitle-color);
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.hero__title3 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  color: var(--hero-title-color);
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  padding: 0 2rem;
+}
+
+.hero__subtitle-bottom3 {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: var(--hero-description-color);
+  padding: 0 2rem;
+  opacity: 0.75;
+}
+
+.hero__button3 {
+  border: none;
+  padding: 0.9rem 1.8rem;
+  background-color: var(--hero-button-bg);
+  color: var(--color-light);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+.hero__button3:hover {
+  background-color: var(--hero-button-hover-bg);
+}
+
+/* Responsive Desktop */
+@media (width > 48rem) {
+  .hero3 {
+    align-items: flex-start;
+    padding-left: 6rem;
+    height: 36rem;
+    background-image: var(--hero-bg-desktop);
+  }
+
+  .hero__subtitle-top3 {
+    text-align: left;
+  }
+
+  .hero__title3 {
+    text-align: left;
+    font-size: 3.5rem;
+    width: 40%;
+    padding: 0;
+  }
+
+  .hero__subtitle-bottom3 {
+    padding: 0;
+    text-align: left;
+    width: 30%;
+  }
+
+  .hero__button3 {
+    margin-left: 0;
+  }
+}
+
+/* Modifier pour BonBonbon */
+.hero--bonbonbon3 {
+  --hero-bg-mobile: url("/assets/Iteration3/bonBonbon/image-hero_mobile.jpg");
+  --hero-bg-desktop: url("/assets/Iteration3/bonBonbon/image-hero_desktop.jpg");
+  --hero-subtitle-color: var(--color-pink);
+  --hero-title-color: var(--color-pink);
+  --hero-description-color: var(--color-pink);
+  --hero-button-bg: var(--color-pink);
+  --hero-button-hover-bg: #c43d89;
+}

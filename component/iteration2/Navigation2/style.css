@@ -1,0 +1,70 @@
+.nav2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav__brand2 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.img__burger2 {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.nav__list2 {
+  gap: 1.5rem;
+  display: none;
+}
+
+.nav__link2 {
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav__link2:hover {
+  text-decoration: underline;
+}
+
+/*/* Menu burger  //pas possible de le faire fonctionner pour l'instant 
+
+#burger {
+  width: 2rem;
+  height: 0.2rem;
+  background: white;
+  display: inline-block;
+  position: relative;
+}
+
+#burger::before,
+#burger::after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 0.2rem;
+  background: white;
+  display: inline-block;
+  transform: origin center;
+  transition: all 0.3s ease;
+}
+*/
+/* media queries */
+@media (width > 40rem) {
+  .nav__btn2 {
+    display: none;
+  }
+  .nav__list2 {
+    display: flex;
+  }
+  .img__burger2 {
+    display: none;
+  }
+}

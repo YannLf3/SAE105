@@ -1,0 +1,100 @@
+.hero {
+  --_hero-bg: var(--hero-bg, var(--color-light));
+  --_hero-text: var(--hero-text, var(--color-dark));
+  --_hero-accent: var(--hero-accent, var(--color-primary));
+}
+
+.hero {
+  background-color: var(--_hero-bg);
+  color: var(--_hero-text);
+  padding: 8rem 1.5rem 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40rem;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.hero__subtitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: var(--_hero-accent);
+}
+
+.hero__title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02rem;
+}
+
+.hero__description {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-gray);
+  padding: 0 1rem;
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.hero__button {
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+
+.hero__button--primary {
+  background-color: var(--_hero-accent);
+  color: var(--color-light);
+  border-color: var(--_hero-accent);
+}
+
+.hero__button--primary:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0.6rem 1.25rem rgba(59, 130, 246, 0.3);
+}
+
+.hero__button--secondary {
+  background-color: transparent;
+  color: var(--_hero-text);
+  border-color: var(--color-gray);
+}
+
+.hero__button--secondary:hover {
+  border-color: var(--_hero-accent);
+  color: var(--_hero-accent);
+}
+
+@media (width > 40rem) {
+  .hero {
+    padding: 10rem 3rem 8rem;
+  }
+
+  .hero__title {
+    font-size: 4rem;
+  }
+
+  .hero__description {
+    font-size: 1.25rem;
+    padding: 0 4rem;
+  }
+}

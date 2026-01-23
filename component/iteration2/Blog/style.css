@@ -1,0 +1,113 @@
+.section__blog2 {
+  background: var(--color-bg);
+  padding: 4rem 1.5rem;
+}
+
+.section__blog__inner2 {
+  margin: 0 auto;
+}
+
+.section__blog__title2 {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--color-text-main);
+  margin-bottom: 0.5rem;
+}
+
+.section__blog__subtitle2 {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--color-text-description);
+  margin-bottom: 2.5rem;
+}
+
+/* Liste des articles */
+.section__blog__list2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Card blog */
+.blog-card2 {
+  background: var(--color-card-bg);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  overflow: hidden; /*gestion du dépassement du contenu d'un élément dans son bloc. hidden donc si ça depasse c'est caché*/
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image pleine largeur en mobile */
+.blog-card__image2 {
+  width: 100%;
+  display: block;
+  height: auto;
+  object-fit: cover; /*façon dont le contenu d'un élément remplacé s'adapte à son conteneur en utilisant sa largeur et sa hauteur.*/
+  /*La taille réelle est calculée pour couvrir la zone décrite par la hauteur et la largeur de l'élément. 
+  Si les ratios de l'objet et de la boîte ne correspondent pas, le contenu remplacé sera rogné.*/
+}
+
+.blog-card__content2 {
+  padding: 1.5rem;
+}
+
+/* Ligne auteur / date / tag */
+.blog-card__meta2 {
+  font-size: 0.75rem;
+  color: var(--color-text-description);
+  margin-bottom: 0.75rem;
+}
+
+.blog-card__tag2 {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 5px;
+  background: var(--color-primary1);
+  color: var(--color-card-bg);
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+/* Titre article */
+.blog-card__title2 {
+  font-family: var(--font-title);
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color-text-main);
+  margin-bottom: 0.75rem;
+}
+
+/* Extrait */
+.blog-card__excerpt2 {
+  font-size: 0.85rem;
+  color: var(--color-text-description);
+  margin-bottom: 1rem;
+}
+
+/* Lien Read more */
+.blog-card__link2 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-primary1);
+}
+
+@media (width > 40rem) {
+  .section__blog__list2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .blog-card2 {
+    width: 30%; /* 3 cards par ligne */
+  }
+
+  .blog-card__image2 {
+    object-fit: cover;
+  }
+}

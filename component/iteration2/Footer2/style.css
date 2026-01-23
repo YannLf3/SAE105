@@ -1,0 +1,84 @@
+/* Footer */
+
+/* Caché en mobile */
+.site-footer2 {
+  display: none;
+}
+
+@media (width > 40rem) {
+  .site-footer2 {
+    display: block;
+    background: var(--color-dark);
+    color: var(--color-bg);
+    padding: 3rem 1.5rem 2rem;
+    margin-top: 3rem;
+  }
+
+  .site-footer__inner2 {
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+  }
+
+  .footer-brand2 {
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+    font-weight: 700; /* valeurs possibles sur cette propriete : definir un 'niveau' de graisse*/
+    color: var(--color-primary1);
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-heading2 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-bg);
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-text2 {
+    font-size: 0.85rem;
+    color: var(--color-text-description);
+  }
+
+  .footer-links2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-subscribe2 {
+    margin-top: 0.75rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .footer-subscribe__input2 {
+    border-radius: 6px;
+    border: none;
+    padding: 0.6rem 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  .footer-subscribe__button2 {
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    background: var(--color-primary1);
+    color: var(--color-card-bg);
+    cursor: pointer;
+  }
+
+  .site-footer__bottom2 {
+    margin: 2rem auto 0;
+    border-top: 1px solid var(--color-text-main);
+    padding-top: 1.25rem;
+    text-align: center;
+  }
+
+  .footer-copy2 {
+    font-size: 0.8rem;
+    color: var(--color-text-description);
+  }
+}

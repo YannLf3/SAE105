@@ -1,0 +1,70 @@
+:root {
+  /* Couleurs principales */
+  --bg-page-top: #ecf0ff;
+  --bg-header-footer: #ffffff;
+  --accent: #2df5c7;
+  --accent-dark: #19c6a0;
+  --text-main: #2e2e6f;
+  --text-muted: #a3a6b3;
+  --border-input: #e6e9f2;
+
+  /* Typo + layout */
+  --font-main: "Segoe UI", sans-serif;
+  --header-height: 4.5rem; /* 72px */
+  --layout-width: 60rem; /* 960px */
+  --transition-fast: 0.2s ease;
+}
+
+/* ---------- HEADER ---------- */
+/* Conteneur global du header */
+.header1 {
+  background-color: var(--bg-header-footer);
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f1f2f7;
+}
+
+/* Contenu centré du header */
+.header-inner1 {
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--layout-width);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem; /* 24px */
+}
+
+/* Logo texte simple */
+.header-logo1 {
+  font-weight: 600;
+  font-size: 1.125rem; /* 18px */
+  letter-spacing: 0.02em;
+}
+
+/* Navigation principale */
+.header-nav1 {
+  display: flex;
+  gap: 2rem; /* 32px */
+  font-size: 0.875rem; /* 14px */
+}
+
+/* Liens de navigation */
+.header-link1 {
+  text-decoration: none;
+  color: var(--text-main);
+  opacity: 0.8;
+  transition: opacity var(--transition-fast);
+}
+
+.header-link1:hover {
+  opacity: 1;
+}
+
+/* MEDIA QUERIES changement de couleur du header sur grands écrans */
+@media (width > 50rem) {
+  .header1 {
+    background-color: #e3f7ff;
+  }
+}

@@ -1,0 +1,239 @@
+/* Variables privées */
+.showcase3 {
+  --_showcase-bg-featured: var(--showcase-bg-featured, var(--color-orange));
+  --_showcase-text-featured: var(--showcase-text-featured, var(--color-light1));
+  --_showcase-btn-border: var(--showcase-btn-border, var(--color-dark1));
+  --_showcase-btn-bg: var(--showcase-btn-bg, var(--color-dark1));
+  --_showcase-btn-text: var(--showcase-btn-text, var(--color-light1));
+  --_showcase-bg-medium: var(--showcase-bg-medium, var(--color-gray-light1));
+  --_showcase-bg-small: var(--showcase-bg-small, var(--color-gray-light1));
+}
+
+/* Bloc Showcase */
+.showcase3 {
+  padding: 0 1.5rem 3rem;
+  background-color: var(--color-light1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Element Featured (grande carte avec image) */
+.showcase__featured3 {
+  background-color: var(--_showcase-bg-featured);
+  border-radius: 0.5rem;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Element Featured Image */
+.showcase__featured-image3 {
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto 2rem;
+  object-fit: contain;
+}
+
+/* Element Featured Content */
+.showcase__featured-content3 {
+  position: relative;
+  z-index: 1;
+}
+
+/* Element Featured Title */
+.showcase__featured-title3 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  color: var(--_showcase-text-featured);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+/* Element Featured Description */
+.showcase__featured-description3 {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: var(--_showcase-text-featured);
+  opacity: 0.75;
+}
+
+/* Element Featured Button */
+.showcase__featured-button {
+  border: 2px solid var(--_showcase-btn-border);
+  padding: 0.9rem 1.8rem;
+  background-color: var(--_showcase-btn-bg);
+  color: var(--_showcase-btn-text);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.showcase__featured-button3:hover {
+  background-color: transparent;
+  color: var(--_showcase-btn-border);
+}
+
+/* carte moyenne avec background image */
+.showcase__medium3 {
+  background-color: var(--_showcase-bg-medium);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5rem;
+  padding: 6rem 2rem;
+  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Element Medium Title */
+.showcase__medium-title3 {
+  color: var(--color-dark);
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+}
+
+/* Element Medium Button */
+.showcase__medium-button3 {
+  border: 2px solid var(--color-dark1);
+  background-color: transparent;
+  color: var(--color-dark1);
+  padding: 0.9rem 1.8rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.showcase__medium-button3:hover {
+  background-color: var(--color-dark1);
+  color: var(--color-light1);
+}
+
+.showcase__small3 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Element Small Image Container */
+.showcase__small-image-container3 {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  height: 12rem;
+}
+
+.showcase__small-image3 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Element Small Content */
+.showcase__small-content3 {
+  background-color: var(--_showcase-bg-small);
+  border-radius: 0.5rem;
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 12rem;
+}
+
+/* Element Small Title */
+.showcase__small-title3 {
+  color: var(--color-dark1);
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+}
+
+/* Element Small Button */
+.showcase__small-button3 {
+  border: 2px solid var(--color-dark1);
+  background-color: transparent;
+  color: var(--color-dark1);
+  padding: 0.9rem 1.8rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.showcase__small-button3:hover {
+  background-color: var(--color-dark1);
+  color: var(--color-light1);
+}
+
+/* Responsive Desktop */
+@media (width > 40rem) {
+  .showcase3 {
+    padding: 0 6rem 5rem;
+    gap: 2rem;
+  }
+
+  .showcase__featured3 {
+    flex-direction: row;
+    padding: 4rem;
+    text-align: left;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .showcase__featured-image3 {
+    width: 20rem;
+    height: 20rem;
+    margin: 0;
+  }
+
+  .showcase__featured-content3 {
+    width: 50%;
+  }
+
+  .showcase__medium3 {
+    padding: 6rem 4rem;
+  }
+
+  .showcase__small3 {
+    flex-direction: row;
+  }
+
+  .showcase__small-image-container3 {
+    width: 50%;
+    height: 20rem;
+  }
+
+  .showcase__small-content3 {
+    width: 50%;
+    height: 20rem;
+    padding: 4rem;
+  }
+}
+
+/* Modifier pour BonBonbon */
+.showcase--bonbonbon3 {
+  --showcase-bg-featured: var(--color-pink);
+  --showcase-bg-medium: var(--color-beige);
+  --showcase-bg-small: var(--color-beige);
+}

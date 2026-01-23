@@ -1,0 +1,120 @@
+.section__pricing2 {
+  background: var(--color-bg);
+  padding: 4rem;
+}
+
+.section__pricing__title2 {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--color-text-main);
+  margin-bottom: 0.5rem;
+}
+
+.section__pricing__subtitle2 {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--color-text-description);
+  margin-bottom: 2.5rem;
+}
+
+/* les 3 plans */
+.section__pricing__list2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.pricing-card2 {
+  background: var(--color-card-bg);
+  border-radius: var(--radius-card);
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing-card2:active {
+  background: #e0fcf1;
+  border: 2px solid var(--color-primary1);
+}
+
+/* Carte Pro mise en avant */
+.pricing-card--featured2 {
+  background: #00bfa6;
+  border: 2px solid var(--color-primary1);
+}
+
+/* Badge BEST VALUE */
+.pricing-card__badge2 {
+  display: inline-block;
+  background: #ff9800;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 0.25rem 0.75rem;
+  border-radius: 32rem;
+  margin-bottom: 1rem;
+}
+
+/* Titres + prix */
+.pricing-card__name2 {
+  font-family: var(--font-title);
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color-text-main);
+  margin-bottom: 1rem;
+}
+
+.pricing-card__price2 {
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary1);
+  display: flex;
+}
+
+.pricing-card__currency2 {
+  font-size: 1.5rem;
+}
+
+.pricing-card__period2 {
+  font-size: 0.8rem;
+  color: var(--color-text-description);
+  padding-top: 0.8rem;
+}
+
+/* Liste des features */
+.pricing-card__features2 {
+  padding: 0;
+  margin-bottom: 2rem;
+  font-size: 0.85rem;
+  color: var(--color-text-description);
+}
+
+/* Boutons */
+.pricing-card__button2 {
+  border: none;
+  border-radius: 6px;
+  padding: 1rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: var(--color-primary1);
+  color: var(--color-card-bg);
+}
+
+/* Media Queries */
+@media (width > 50rem) {
+  .section__pricing__list2 {
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+  }
+
+  .pricing-card2 {
+    width: 33%;
+  }
+}

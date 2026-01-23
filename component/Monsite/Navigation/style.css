@@ -1,0 +1,81 @@
+.nav {
+  --_nav-bg: var(--nav-bg, var(--color-dark));
+  --_nav-text: var(--nav-text, var(--color-light));
+}
+
+.nav {
+  background-color: var(--_nav-bg);
+  color: var(--_nav-text);
+  padding: 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.nav__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.nav__logo {
+  font-size: 1.5rem;
+}
+
+.nav__hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav__hamburger span {
+  width: 1.2rem;
+  height: 0.1rem;
+  background-color: var(--_nav-text);
+  display: block;
+  transition: all 0.3s;
+}
+
+.nav__menu {
+  display: none;
+}
+
+.nav__menu-item a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s;
+  padding: 0.5rem;
+}
+
+.nav__menu-item a:hover {
+  color: var(--color-primary);
+}
+
+@media (width > 40rem) {
+  .nav {
+    padding: 1.5rem 3rem;
+  }
+
+  .nav__hamburger {
+    display: none;
+  }
+
+  .nav__menu {
+    display: flex;
+    gap: 2rem;
+  }
+}

@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,700&display=swap");
+
+:root {
+  /* Iteration 1*/
+  --clr-dark: hsl(253, 69%, 8%);
+  --clr-light: hsl(0, 0%, 100%);
+
+  --ff-sans1: "DM sans", sans-serif;
+
+  /* Couleurs Audiophile */
+  --color-dark1: #000000;
+  --color-light1: #ffffff;
+  --color-gray1: #cfcfcf;
+  --color-orange: #d87d4a;
+  --color-gray-light1: #f1f1f1;
+
+  /* Couleurs BonBonbon */
+  --color-pink: #db4d9a;
+  --color-pink-light: #e6d5d5;
+  --color-beige: #fff9f0;
+
+  /* Couleurs PixelForge */
+  --color-pixelforge: #7c3aed;
+  --color-pixelforge-light: #f3e8ff;
+
+  /* Iteration 2 - Variables */
+  --color-bg: #f5f5f5;
+  --color-primary1: #00bfa6;
+  --color-secondary1: #00a89e;
+  --color-border: #e0e0e0;
+  --color-card-bg: #ffffff;
+  --color-text-main: #1a1a1a;
+  --color-text-description: #666666;
+  --font-title: "Manrope", sans-serif;
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --radius-card: 8px;
+  --bg-contact-section: #f5f5f5;
+  --bg-contact-card: #ffffff;
+  --fg-contact-title: #1a1a1a;
+  --bd-contact-input: #e0e0e0;
+
+  /* Mon site */
+
+  /* Couleurs */
+  --color-dark: #1a1a1a;
+  --color-darker: #0d0d0d;
+  --color-light: #ffffff;
+  --color-gray: #6b7280;
+  --color-gray-dark: #374151;
+  --color-gray-light: #f3f4f6;
+
+  /* Couleurs accentuées */
+  --color-primary: #3b82f6;
+  --color-primary-hover: #2563eb;
+  --color-secondary: #8b5cf6;
+  --color-accent: #f59e0b;
+
+  /* Typographie */
+  --ff-sans: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --ff-serif: Georgia, "Times New Roman", serif;
+}

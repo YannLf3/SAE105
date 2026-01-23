@@ -1,0 +1,104 @@
+.section__features2 {
+  background: var(--color-bg);
+  padding: 4rem 1.5rem;
+}
+
+.section__features__inner2 {
+  margin: 0 auto;
+}
+
+.section__features__title2 {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-text-main);
+  margin: 0.5rem;
+}
+
+.section__features__subtitle2 {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--color-text-description);
+  line-height: 1.5;
+  margin: 2rem;
+}
+
+.section__features__list2 {
+  /*container des cartes*/
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.section__features__card2 {
+  /*une par une*/
+  background: var(--color-card-bg);
+  border-radius: var(--radius-card);
+  padding: 2rem;
+  text-align: left;
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 230px;
+}
+
+.section__features__icon2 {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  color: var(--color-primary1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.section__features__card-title2 {
+  font-family: var(--font-title);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-primary1);
+  margin-bottom: 0.75rem;
+  display: flex;
+  flex: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.section__features__card-text2 {
+  font-size: 0.85rem;
+  color: var(--color-text-description);
+}
+
+.numero2 {
+  display: flex;
+  justify-content: left;
+  margin-left: 3.5rem;
+  font-size: 0.8rem;
+  font-weight: lighter;
+  color: var(--color-primary1);
+}
+
+.numero__title2 {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+@media (width > 40rem) {
+  .section__features__list2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; /* centre le bloc dans la section */
+    gap: 2rem;
+  }
+
+  .section__features__card2 {
+    width: 30%; /* chaque carte prend environ un tiers de la largeur pour que 3 logent en version desktop*/
+  }
+}

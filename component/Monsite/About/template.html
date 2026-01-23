@@ -1,0 +1,16 @@
+<section class="about {{cssClass}}" id="about">
+  <div class="about__content">
+    <p class="about__subtitle">{{subtitle}}</p>
+    <h2 class="about__title">{{title}}</h2>
+    <p class="about__description">{{description}}</p>
+  </div>
+  <div class="about__stats">
+    <template id="stat-template">
+      <div class="about__stat">
+        <span class="about__stat-value"></span>
+        <span class="about__stat-label"></span>
+      </div>
+    </template>
+    {{statsItems}}
+  </div>
+</section>

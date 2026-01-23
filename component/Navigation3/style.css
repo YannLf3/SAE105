@@ -1,0 +1,59 @@
+.nav3 {
+  background-color: var(--color-dark1);
+  color: var(--color-light1);
+  height: 4.5rem;
+  padding-inline: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* mobile : logo centré visuellement entre burger et shop */
+}
+
+.nav__title3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  text-transform: lowercase;
+}
+
+.img-burger3,
+.img-shop3 {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  /* la couleur vient du SVG (penser à currentColor ) */
+}
+
+.nav__list3 {
+  display: none;
+}
+
+.navigation__link3 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-light1);
+}
+
+.bg--navigation3 {
+  background-color: var(--color-pink);
+}
+
+@media (width > 48rem) {
+  .nav3 {
+    justify-content: flex-start;
+    padding-inline: 2.5rem; /*padding uniquement en ligne*/
+    gap: 3rem; /* espace titre <-> liste */
+  }
+
+  .img-burger3 {
+    display: none;
+  }
+
+  .nav__list3 {
+    display: flex;
+    gap: 2rem; /* espace entre les <li> */
+  }
+
+  .img-shop3 {
+    margin-left: auto; /* pousse uniquement le shop tout à droite ==> mdn comme j'ai vu jeudi */
+  }
+}

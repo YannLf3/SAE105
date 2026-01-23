@@ -1,0 +1,309 @@
+body {
+  font-family: "Manrope", "Poppins", sans-serif;
+  background-color: var(--color-light1);
+  color: var(--color-dark1);
+}
+
+/* Navigation Index Styles */
+.nav__index {
+  background-color: var(--color-light);
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.nav__list__index {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.nav__item__index {
+  display: inline;
+}
+
+.nav__link__index {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.4rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  color: var(--color-dark);
+  background-color: var(--color-gray-light);
+}
+
+.nav__link__index:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--color-dark);
+}
+
+/* Audiophile lien  */
+.nav__link__audiophile {
+  background: linear-gradient(
+    135deg,
+    var(--color-dark) 0%,
+    var(--color-dark) 50%,
+    var(--color-orange) 50%,
+    var(--color-orange) 100%
+  );
+  background-size: 200% 200%;
+  background-position: 0% 0%;
+  color: var(--color-light);
+  border: 2px solid var(--color-orange);
+  font-weight: bold;
+}
+
+.nav__link__audiophile:hover {
+  background-position: 100% 100%;
+  box-shadow: 0 6px 20px var(--color-orange);
+}
+
+/* BonBonbon lien  */
+.nav__link__bonbonbon {
+  background: linear-gradient(
+    135deg,
+    var(--color-beige) 0%,
+    var(--color-beige) 50%,
+    var(--color-pink) 50%,
+    var(--color-pink) 100%
+  );
+  background-size: 200% 200%;
+  background-position: 0% 0%;
+  color: var(--color-pink);
+  border: 2px solid var(--color-pink);
+  font-weight: bold;
+}
+
+.nav__link__bonbonbon:hover {
+  background-position: 100% 100%;
+  color: var(--color-light);
+  box-shadow: 0 6px 20px var(--color-pink);
+}
+
+/* Responsive Design */
+@media (width > 40rem) {
+  .nav__list__index {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav__link__index {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Main Content */
+.main__index {
+  padding: 4rem 2rem;
+}
+
+/* Hero Section */
+.hero__index {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.hero__content__index {
+  margin: 0 auto;
+}
+
+.hero__title__index {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--color-dark);
+  margin: 0 0 1rem 0;
+}
+
+.hero__subtitle__index {
+  font-size: 1.5rem;
+  color: var(--color-orange);
+  font-weight: 600;
+  margin: 0 0 1.5rem 0;
+}
+
+.hero__description__index {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Projects Section */
+.projects__index {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.project__card {
+  padding: 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.project__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project__card h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0 0 1rem 0;
+}
+
+.project__card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 1.5rem 0;
+  color: #666;
+}
+
+/* Audiophile Card */
+.audiophile__card {
+  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+  border-left: 4px solid var(--color-orange);
+}
+
+.audiophile__card h2 {
+  color: var(--color-dark);
+}
+
+.audiophile__link {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  border: 2px solid var(--color-dark);
+}
+
+.audiophile__link:hover {
+  background-color: var(--color-orange);
+  border-color: var(--color-orange);
+}
+
+/* BonBonbon Card */
+.bonbonbon__card {
+  background: linear-gradient(
+    135deg,
+    #fff9f0 0%,
+    #ffffff 100%
+  ); /* valeurs des linear gradient en partie suggérées par copilot */
+  border-left: 4px solid var(--color-pink);
+}
+
+.bonbonbon__card h2 {
+  color: var(--color-pink);
+}
+
+.bonbonbon__link {
+  background-color: var(--color-pink);
+  color: var(--color-light);
+  border: 2px solid var(--color-pink);
+}
+
+.bonbonbon__link:hover {
+  background-color: var(--color-pink-light);
+  border-color: var(--color-pink);
+  color: var(--color-pink);
+}
+
+/* PixelForge Link Styles */
+.nav__link__pixelforge {
+  background: linear-gradient(
+    135deg,
+    var(--color-pixelforge) 0%,
+    var(--color-pixelforge) 50%,
+    var(--color-pixelforge-light) 50%,
+    var(--color-pixelforge-light) 100%
+  );
+  background-size: 200% 200%;
+  background-position: 0% 0%;
+  color: var(--color-light);
+  border: 2px solid var(--color-pixelforge);
+  font-weight: bold;
+}
+
+.nav__link__pixelforge:hover {
+  background-position: 100% 100%;
+  color: var(--color-pixelforge);
+  box-shadow: 0 6px 20px var(--color-pixelforge);
+}
+
+/* Project Links */
+.project__link {
+  align-self: flex-start;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.project__link:hover {
+  transform: translateX(4px);
+}
+
+/* Footer */
+.footer__index {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  padding: 2rem;
+  text-align: center;
+  border-top: 3px solid var(--color-orange);
+}
+
+.footer__content__index {
+  margin: 0 auto;
+}
+
+.footer__text__index {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.footer__text__index span {
+  color: var(--color-orange);
+  font-weight: bold;
+}
+
+.nav__list__index {
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav__link__index {
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+}
+
+.hero__title__index {
+  font-size: 2rem;
+}
+
+.hero__subtitle__index {
+  font-size: 1.2rem;
+}
+
+.projects__index {
+  gap: 1.5rem;
+}
+
+.main__index {
+  padding: 2rem 1rem;
+}

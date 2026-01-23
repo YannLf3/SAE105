@@ -1,0 +1,147 @@
+/* Variables privées pour Footer */
+.footer3 {
+  --footer-bg: var(--color-dark1);
+  --footer-text-color: var(--color-light1);
+  --footer-text-muted: var(--color-gray1);
+  --footer-link-hover: var(--color-orange);
+}
+
+/* Bloc Footer */
+.footer3 {
+  background-color: var(--footer-bg);
+  color: var(--footer-text-color);
+  padding: 3rem 1.5rem;
+}
+
+/* Element Top */
+.footer__top3 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Element Brand */
+.footer__brand3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  text-transform: lowercase;
+}
+
+/* Element Menu */
+.footer__menu3 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+/* Element Menu Item */
+.footer__menu-item3 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer__menu-item3:hover {
+  color: var(--footer-link-hover);
+}
+
+/* Element Middle */
+.footer__middle3 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Element Description */
+.footer__description3 {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--footer-text-muted);
+}
+
+/* Element Socials */
+.footer__socials3 {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Element Social Icon */
+.footer__social-icon3 {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.footer__social-icon3:hover {
+  opacity: 0.7;
+}
+
+/* Element Bottom */
+.footer__bottom3 {
+  text-align: center;
+}
+
+/* Element Copyright */
+.footer__copyright3 {
+  font-size: 0.9rem;
+  color: var(--footer-text-muted);
+  font-weight: 700;
+}
+
+/* Responsive Desktop */
+@media (width > 48rem) {
+  .footer3 {
+    padding: 4rem 6rem;
+  }
+
+  .footer__top3 {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__menu3 {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .footer__middle3 {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .footer__description3 {
+    width: 50%;
+  }
+
+  .footer__socials3 {
+    justify-content: flex-start;
+  }
+
+  .footer__bottom3 {
+    text-align: left;
+  }
+}
+
+/* Modifier pour BonBonbon */
+.footer--bonbonbon3 {
+  --footer-bg: var(--color-pink);
+  --footer-text-color: var(--color-light1);
+  --footer-text-muted: var(--color-gray-light1);
+  --footer-link-hover: var(--color-light1);
+}
+
+.footer--bonbonbon3 .footer__menu-item3:hover {
+  opacity: 0.8;
+}

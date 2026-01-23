@@ -1,0 +1,96 @@
+/* Variables privées pour About */
+.about3 {
+  --_about-accent: var(--about-accent, var(--color-orange));
+  --_about-text: var(--about-text, var(--color-dark));
+  --_about-text-muted: var(--about-text-muted, rgba(0, 0, 0, 0.5));
+  --_about-bg-img: var(
+    --about-bg-img,
+    url("/assets/Iteration3/audiophile/man.jpeg")
+  );
+}
+
+/* Bloc About */
+.about3 {
+  padding: 3rem 1.5rem;
+  background-color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Element Image Container */
+.about__image-container3 {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+/* Element Image */
+.about__image3 {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  background-image: var(--_about-bg-img);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Element Content */
+.about__content3 {
+  text-align: center;
+}
+
+/* Element Title */
+.about__title3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  color: var(--_about-text);
+}
+
+/* Element Title Accent */
+.about__title-accent3 {
+  color: var(--_about-accent);
+}
+
+/* Element Description */
+.about__description3 {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--_about-text-muted);
+}
+
+/* Responsive Desktop */
+@media (width > 48rem) {
+  .about3 {
+    padding: 5rem 6rem;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .about__image-container3 {
+    width: 50%;
+  }
+
+  .about__image3 {
+    height: 25rem;
+  }
+
+  .about__content3 {
+    width: 50%;
+    text-align: left;
+  }
+
+  .about__title3 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Modifier pour BonBonbon */
+.about--bonbonbon3 {
+  --about-accent: var(--color-pink);
+  --about-bg-img: url("/assets/Iteration3/bonBonbon/Image_pour_Blog_3_900x.webp");
+}

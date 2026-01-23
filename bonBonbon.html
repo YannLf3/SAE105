@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AudioPhile</title>
+    <link rel="stylesheet" href="./css/global.css" />
+  </head>
+
+  <body>
+    <div id="content">
+      <script type="module">
+        //import de la nav
+        import { Navigation } from "./component/Navigation3/index.js";
+        import { NavigationData } from "./data/bonBonbon/NavigationData.js";
+
+        //import du hero
+        import { Hero } from "./component/Hero/index.js";
+        import { HeroData } from "./data/bonBonbon/HeroData.js";
+
+        //import du product
+        import { Product } from "./component/Product/index.js";
+        import { ProductData } from "./data/bonBonbon/ProductData.js";
+
+        //import du footer
+        import { Footer } from "./component/Footer3/index.js";
+        import { FooterData } from "./data/bonBonbon/FooterData.js";
+
+        //import du test
+        import { About } from "./component/Test/index.js";
+        import { AboutData } from "./data/bonBonbon/AboutData.js";
+
+        //import du showcase
+        import { Showcase } from "./component/Showcase3/index.js";
+        import { ShowcaseData } from "./data/bonBonbon/ShowcaseData.js";
+
+        //rendus
+        Navigation.render("#content", NavigationData[0], "bg--navigation3");
+        Hero.render("#content", HeroData[0], "hero--bonbonbon3");
+        Product.render("#content", ProductData[0], "product--bonbonbon3");
+        Showcase.render("#content", ShowcaseData[0], "showcase--bonbonbon3");
+        About.render("#content", AboutData[0], "about--bonbonbon3");
+        Footer.render("#content", FooterData[0], "footer--bonbonbon3");
+      </script>
+    </div>
+  </body>
+</html>

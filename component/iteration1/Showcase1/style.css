@@ -1,0 +1,69 @@
+:root {
+  --bg-showcase: #f9fafc;
+  --feature-title-color: #2e2e6f;
+  --feature-text-color: #66667a;
+}
+
+.features1 {
+  margin: 0 auto;
+  max-width: 60rem;
+  padding: 3.75rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem; /* 60px entre les cartes */
+}
+
+.feature-item1 {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem; /* 40px entre image et texte */
+}
+
+.feature-content1 {
+  flex: 1;
+  min-height: 20rem;
+}
+
+.feature-title1 {
+  font-size: 1.5rem;
+  color: var(--feature-title-color);
+}
+
+.feature-text1 {
+  color: var(--feature-text-color);
+  line-height: 1.6;
+  margin: 1rem 0 2rem;
+}
+
+.btn1 {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: solid 2px #66667a;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: all 0.2 ease;
+}
+.btn1:hover {
+  background-color: var(--btn-primary-bg);
+  color: #5f56ac;
+}
+
+.feature-image1 {
+  flex: 1;
+  border-radius: 0.25rem;
+  overflow: hidden; /* Pour arrondir les coins de l'image, que ça colle à la 'border' */
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (width < 50rem) {
+  .feature-item1 {
+    flex-direction: column; /* Empilement vertical sur mobile */
+    gap: 0.25rem; /* espace entre image et texte */
+  }
+  .feature-content1 {
+    text-align: center;
+  }
+}

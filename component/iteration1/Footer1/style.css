@@ -1,0 +1,164 @@
+:root {
+  /* Reprise des variables pour cohérence avec le header */
+  --bg-header-footer: #ffffff;
+  --accent: #2df5c7;
+  --accent-dark: #19c6a0;
+  --text-main: #2e2e6f;
+  --text-muted: #a3a6b3;
+  --border-input: #e6e9f2;
+  --layout-width: 60rem;
+  --footer-padding-y: 3.75rem; /* défini ici pour bien avoir le même padding sur tout le footer */
+  --transition-fast: 0.2s ease;
+  --font-main: "Segoe UI", sans-serif;
+}
+
+/* ---------- FOOTER ---------- */
+/* Conteneur global du footer */
+.footer1 {
+  background-color: var(--bg-header-footer);
+  border-top: 1px solid #f1f2f7;
+  font-family: var(--font-main);
+  @media (width < 50rem) {
+    .footer-inner1 {
+      flex-direction: column;
+      flex-wrap: nowrap; /* Les colonnes s'empilent naturellement */
+      gap: 2.5rem; /* 40px */
+      margin-left: 100px; /* pour centrer le footer sur mobile */
+    }
+
+    .footer-newsletter1 {
+      justify-self: auto; /* Réinitialise l'alignement à droite */
+    }
+  }
+}
+
+/* Contenu centré du footer */
+.footer-inner1 {
+  margin: 0 auto;
+  max-width: var(--layout-width);
+  padding: var(--footer-padding-y) 1.5rem 4.375rem;
+  display: flex;
+  gap: 10rem;
+  align-items: flex-start;
+  flex-wrap: wrap; /* pour déplier sur mobile */
+}
+
+/* Colonne générique */
+.footer-col1 {
+  min-width: 0;
+}
+
+/* Colonne marque */
+.footer-brand1 .footer-logo1 {
+  font-weight: 600;
+  font-size: 1.125rem; /* 18px */
+  margin-bottom: 1.125rem; /* 18px */
+}
+
+.footer-text1 {
+  margin: 0;
+  font-size: 0.8125rem; /* 13px */
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+/* Titres des colonnes de liens */
+.footer-title1 {
+  margin: 0 0 1.125rem; /* 18px */
+  font-size: 0.875rem; /* 14px */
+  font-weight: 600;
+}
+
+/* Listes de liens */
+.footer-list1 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-item1 .footer-item1 {
+  margin-top: 0.5rem; /* 8px */
+}
+
+.footer-link1 {
+  text-decoration: none;
+  font-size: 0.8125rem; /* 13px */
+  color: var(--text-main);
+  opacity: 0.8;
+  transition: opacity var(--transition-fast);
+}
+
+.footer-link1:hover {
+  opacity: 1;
+}
+
+/* Colonne newsletter alignée à droite sur grands écrans */
+.footer-newsletter1 {
+  justify-self: end;
+}
+
+/* Formulaire newsletter */
+.newsletter1 {
+  display: flex;
+  margin-bottom: 1.375rem; /* 22px */
+}
+
+.newsletter-input1 {
+  min-width: 0;
+  padding: 0.625rem 0.875rem; /* 10px 14px */
+  border-radius: 1.25rem 0 0 1.25rem; /* 20px */
+  border: 1px solid var(--border-input);
+  border-right: none;
+  font-size: 0.8125rem; /* 13px */
+  color: var(--text-main);
+}
+
+.newsletter-input1::placeholder {
+  color: var(--text-muted);
+}
+
+.newsletter-button1 {
+  padding: 0.625rem 1.375rem; /* 10px 22px */
+  border-radius: 0 1.25rem 1.25rem 0; /* 20px */
+  border: none;
+  font-size: 0.8125rem; /* 13px */
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(135deg, #2df5c7, #19d3ff);
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1.125rem rgba(0, 199, 180, 0.45); /* 0 8px 18px */
+  transition: transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.newsletter-button1:hover {
+  background: linear-gradient(135deg, var(--accent-dark), #16b5e8);
+  transform: translateY(-1px);
+  box-shadow: 0 0.625rem 1.375rem rgba(0, 180, 160, 0.5); /* 0 10px 22px */
+}
+
+/* Icônes sociales */
+.social1 {
+  display: flex;
+  gap: 0.75rem; /* 12px */
+  font-size: 0.8125rem; /* 13px */
+}
+
+.social-icon1 {
+  width: 1.625rem; /* 26px */
+  height: 1.625rem; /* 26px */
+  border-radius: 50%;
+  border: 1px solid var(--border-input);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-main);
+  font-size: 0.75rem; /* 12px */
+  opacity: 0.8;
+  text-decoration: none;
+  transition: opacity var(--transition-fast);
+}
+
+.social-icon1:hover {
+  opacity: 1;
+}
